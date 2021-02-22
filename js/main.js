@@ -22,7 +22,7 @@ genera.addEventListener("click",
             costo = costo - sconto;
             costo = Math.round( costo * 100 + Number.EPSILON ) / 100;
             document.getElementById("costo_biglietto").innerHTML = costo + " Eur.";
-            document.getElementById("sconto").innerHTML = "minori";
+            document.getElementById("sconto").innerHTML = "Sconto Minori";
             
         } else if (eta == "elder") {
             costo = chilometri * costante;
@@ -30,13 +30,13 @@ genera.addEventListener("click",
             costo = costo - sconto;
             costo = Math.round( costo * 100 + Number.EPSILON ) / 100;
             document.getElementById("costo_biglietto").innerHTML = costo + " Eur.";
-            document.getElementById("sconto").innerHTML = "anziani";
+            document.getElementById("sconto").innerHTML = "Sconto Anziani";
 
         } else {
             costo = chilometri * costante;
             costo = Math.round( costo * 100 + Number.EPSILON ) / 100;
             document.getElementById("costo_biglietto").innerHTML = costo + " Eur.";
-            document.getElementById("sconto").innerHTML = "none";
+            document.getElementById("sconto").innerHTML = "Null";
 
         }
     }

@@ -16,13 +16,19 @@ body {
     border-color: purple;
 }
 
-.button{
+#nome {
+    font-weight: 600;
+}
+.button {
     padding: 5px;
     color: purple;
     font-weight: 700;
     margin: 30px 0;
 }
 
+.button:active {
+    background-color: white;
+}
 h1 {
     color: white;
     margin: 20px 0;
@@ -55,6 +61,11 @@ h4 {
     display: flex;
     border: 1px solid grey;
     border-right: none;
+}
+
+.biglietto_datas p {
+    font-weight: 500;
+    margin: 20px 0;
 }
 .data_name {
     background-color: grey;
