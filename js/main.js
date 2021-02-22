@@ -2,8 +2,8 @@ var genera = document.getElementById("genera");
 genera.addEventListener("click", 
 
     function() {
-        var chilometri, eta, costante, costo, sconto, nome, appear;
 
+        var chilometri, eta, costante, costo, sconto, nome, appear;
 
         costante = 0.21;
         nome = document.getElementById("text").value;
@@ -15,7 +15,7 @@ genera.addEventListener("click",
         document.getElementById("carrozza_num").innerHTML = (Math.floor(Math.random() * 10) + 1);
         document.getElementById("cp").innerHTML = (Math.floor(Math.random() * 10000) + 90000);
         
-        if ((!document.getElementById("text").value) || (!document.getElementById("km").value) || (document.getElementById("km").value > 1500)) {
+        if ((!document.getElementById("text").value) || (!document.getElementById("km").value) || (document.getElementById("km").value > 1500) || (document.getElementById("text").value.length > 40)) {
             alert("Prego, inserire tutti i dati, o i dati corretti, per proseguire con il calcolo del costo del biglietto.");
             
         } else {
@@ -43,9 +43,7 @@ genera.addEventListener("click",
                 costo = Math.round( costo * 100 + Number.EPSILON ) / 100;
                 document.getElementById("costo_biglietto").innerHTML = costo + " Eur.";
                 document.getElementById("sconto").innerHTML = "Null";
-    
             }
-    
         }
     }
 
