@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: purple;
+    text-align: center;
+    padding: 0 20%;
+}
+
+
+#text {
+    margin-bottom: 20px;
+    border-color: purple;
+}
+
+.button{
+    padding: 5px;
+    color: purple;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+h1 {
+    color: white;
+    margin: 20px 0;
+}
+h3 {
+    color: purple;
+    margin: 20px 0;
+}
+h4 {
+    margin: 20px 0;
+}
+.datas {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 20px;
+}
+.item {
+    width: 33%;
+}
+.item_low {
+    width: 100%;
+}
+
+.biglietto {
+    background-color: white;
+    padding: 20px;
+}
+.biglietto_datas {
+    display: flex;
+    border: 1px solid grey;
+    border-right: none;
+}
+.data_name {
+    background-color: grey;
+    width: 20%;
+}
+.data {
+    width: 20%;
+}
