@@ -2,10 +2,12 @@ var genera = document.getElementById("genera");
 genera.addEventListener("click", 
 
     function() {
-        var chilometri, eta, costante, costo, sconto, nome;
+        var chilometri, eta, costante, costo, sconto, nome, appear;
 
 
         costante = 0.21;
+        appear = document.getElementById("display_disappear");
+        appear.style.display = "block";
         nome = document.getElementById("text").value;
         document.getElementById("nome").innerHTML = nome;
         eta = document.getElementById("age").value;
