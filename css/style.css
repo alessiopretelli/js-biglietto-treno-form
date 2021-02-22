@@ -12,7 +12,19 @@ body {
 
 
 #text {
+    text-align: center;
     margin-bottom: 20px;
+    border-color: purple;
+}
+
+
+#km {
+    text-align: end;
+    border-color: purple;
+    width: 100px;
+}
+
+#age {
     border-color: purple;
 }
 
@@ -20,6 +32,11 @@ body {
     font-weight: 600;
 }
 
+
+#dett_pass {
+    text-align: start;
+    margin: 5px 0;
+}
 
 #display_disappear {
     display: none;
